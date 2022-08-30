@@ -1,0 +1,22 @@
+.button {
+  width: 300px;
+  height: 65px;
+  border-radius: 30px;
+  background-color: #00C78B;
+  border: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 25px;
+  color: #fff;
+}
+.button:hover {
+  background-color: #009b76;
+  transform: scale(1.05);
+}
+@media(max-width: 1024px) {
+  .button {
+    width: 220px;
+  }
+}
