@@ -1,5 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
+// import React, { useContext } from 'react';
+import { useState, useContext } from 'react';
+import { holidaysContext } from '../../../context/holidaysContext';
 import style from './Choices.module.css';
 
 const holidays = {
@@ -12,8 +13,7 @@ const holidays = {
 
 const Choices = () => {
   const [isOpenChoices, setIsOpenChoices] = useState(false);
-  const [holiday, setHoliday] = useState('Выбрать праздник');
-
+  const {holiday, setHoliday} = useContext(holidaysContext);
 
   const toggleChoices = () => {
     setIsOpenChoices(!isOpenChoices);
